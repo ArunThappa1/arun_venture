@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation - EcoSmart Buildings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="booking-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">EcoSmart Buildings</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html" class="book-now active">Book Now</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="booking-container">
+        <h1>Book a Consultation</h1>
+        
+        <div class="booking-grid">
+            <div class="booking-form">
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="">Select a project type</option>
+                            <option value="new-construction">New Construction</option>
+                            <option value="renovation">Renovation</option>
+                            <option value="certification">Green Certification</option>
+                            <option value="energy-audit">Energy Audit</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="building-size">Building Size (sq ft)</label>
+                        <input type="number" id="building-size" name="building-size" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Consultation Date</label>
+                        <input type="date" id="preferred-date" name="preferred-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Schedule Consultation</button>
+                </form>
+            </div>
+
+            <div class="booking-info">
+                <div class="info-card">
+                    <h3>Why Book with Us?</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Expert AI-powered analysis</li>
+                        <li><i class="fas fa-check"></i> Personalized recommendations</li>
+                        <li><i class="fas fa-check"></i> Cost-saving solutions</li>
+                        <li><i class="fas fa-check"></i> Green certification guidance</li>
+                    </ul>
+                </div>
+
+                <div class="testimonials">
+                    <h3>Client Reviews</h3>
+                    <div class="testimonial">
+                        <p>"EcoSmart Buildings helped us achieve LEED certification while reducing our energy costs by 40%."</p>
+                        <cite>- John Smith, Building Owner</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Their AI-powered recommendations were spot-on and helped us optimize our building's performance."</p>
+                        <cite>- Sarah Johnson, Property Manager</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@ecosmartbuildings.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EcoSmart Buildings. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
